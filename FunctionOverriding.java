@@ -6,18 +6,20 @@ class ParentClass{
 }
 
 class ChildClass extends ParentClass {
-	void display() {  //Overriding the function of parent class
+	ChildClass(){
+		super.display();
+	}
+	void display() {  					//Overriding the function of parent class
 		System.out.println("Child class");
 	}
 }
 
-public class FunctionOverride {
+public class CheckDemo {
 	public static void main(String[] args) {
 		
-		ParentClass parent=new ParentClass();
-		ChildClass child=new ChildClass();
+		ParentClass parent=new ChildClass();
 		
 		parent.display();
-		child.display();
+		//parent.display();
 	}
 }
