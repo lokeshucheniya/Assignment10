@@ -1,17 +1,19 @@
-
-class Parent{                       //Parent class
-	void display(String name) { //Parameter is of type 'String'
+//Parent class
+class Parent{                       
+	void display(String name) { 						
 		System.out.println("Hello "+name+"");
 	}
 }
-class Child extends Parent{        //Child class
-	void display(int i) {      //Parameter is of type 'int'
+
+//Child class
+class Child extends Parent{        
+	void display(int i) {      
 		System.out.println("Child class "+i);
 	}
 }
 public class FunctionOverloading {
 	public static void main(String[] args) {
-		Child child=new Child();  // creating an object of child class
+		Child child=new Child(); 		 // creating an object of child class
 		child.display("FooBar");
 		child.display(1);
 	}
