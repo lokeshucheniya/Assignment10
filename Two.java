@@ -1,20 +1,24 @@
 //Call methods of different classes using objects
 class First {
 	int first=1;
-	First() {  //No-args Constructor
+	//Default Constructor
+	First() {  
 		System.out.println("Number is "+first);
 	}
-	public void display() {
+	//Display Method
+	public void disp() {
 		System.out.println("First");
 	}
 }
 
 class Second {
 	int second=2;
+	//Default Constructor
 	Second() {  //No-args Constructor
 		System.out.println("Number is "+second);
 	}
-	public void display() {
+	//Display Method
+	public void disp() {
 		System.out.println("Second");
 	}
 }
@@ -23,10 +27,10 @@ public class Two {
 
 	public static void main(String[] args) {
 		
-		First first=new First(); //Create object of class First
-		first.display(); //Call display method
+		First first=new First(); 			//Object of class First
+		first.disp(); 					//Calling display method
 		
-		Second second=new Second(); //Create object of class Second
-		second.display(); //Call display method
+		Second second=new Second(); 			//Create object of class Second
+		second.disp(); 					//Call display method
 	}
 }
