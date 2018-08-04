@@ -1,5 +1,4 @@
 
-
 public class AA {
 	public void disp() {
 		System.out.println("This is parent class");
@@ -7,7 +6,7 @@ public class AA {
 }
 
 
-
+// Class BB extends Class AA
 public class BB extends AA {
 	public BB() {
 		super.disp();
@@ -17,7 +16,7 @@ public class BB extends AA {
 	}
 }
 
-
+// Class CC extends Class AA
 public class CC extends AA {
 	public CC(){
 		super.disp();
@@ -27,6 +26,7 @@ public class CC extends AA {
 	}
 }
 
+//Class BB & CC extending AA
 public class Hierarchical {
 	public static void main(String args[]) {
 		
