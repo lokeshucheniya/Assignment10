@@ -1,3 +1,4 @@
+//Class B extending Class A (Single level Inheritance)
 class A {
 	A(){
 		System.out.println("This is parent class");
