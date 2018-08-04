@@ -23,7 +23,7 @@ public class ShapeDemo {
 		shape[0] = new Triangle();
 		shape[1] = new Polygon();
 		shape[2] = new Circle();
-		for(int i=0;i<3;i++) {			//For calling All Three Classes
+		for(int i=0;i<3;i++) {			//For calling draw method of All Three Classes
 			shape[i].draw();
 		}
 		
